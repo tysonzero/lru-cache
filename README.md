@@ -37,6 +37,10 @@ Input integer representing desired size.
 
 Input whether you want a read optimized or write optimized cache.
 
-Submit actions of the form:
-  get <enter> (key: no quotes) <enter>
-  set <enter> (key: no quotes) <enter> (value: eval'd, so quotes necessary for string) <enter>
+Submit actions of one of the following forms:
+
+* get \<enter\> (key: no quotes) \<enter\>
+
+* set \<enter\> (key: no quotes) \<enter\> (value: eval'd, so quotes necessary for string) \<enter\>
+
+CTRL-C when done.
