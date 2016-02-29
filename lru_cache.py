@@ -4,8 +4,8 @@ from sortedcontainers import SortedListWithKey
 
 
 class LRUCache:
-    READ = 'read'  # O(1) get / O(n) set
-    WRITE = 'write'  # O(log n) get / O(log n) set
+    READ = 'read'
+    WRITE = 'write'
 
     def __init__(self, size, mode):
         self._size = size
