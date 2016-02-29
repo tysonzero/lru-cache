@@ -57,3 +57,22 @@ class LRUCache:
     def __repr__(self):
         return repr(self._cache)
 
+
+if __name__ == '__main__':
+    size = int(input('Size: '))
+    mode = None
+    while mode not in ['read', 'write']:
+        mode = input('read or write heavy?: ')
+    lru = LRUCache(size, mode)
+    while True:
+        action = None
+        while action not in ['get', 'set']:
+            action = input('get or set: ')
+        key = input('key: ')
+        if action == 'get':
+            print(lru.get(key))
+        elif action == 'set':
+            value = eval(input('value: '))
+            lru.set(key, value)
+        print(lru)
+
